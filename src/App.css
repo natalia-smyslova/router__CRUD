@@ -1,42 +1,119 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  height: 100vh;
+  padding: 20px;
+  background-color: #e8eaed;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header, .post {
+  width: 50vw;
+  min-width: 600px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
 }
 
-.card {
-  padding: 2em;
+.header__input {
+  flex: 1;
+  border: none;
 }
 
-.read-the-docs {
-  color: #888;
+.header__input:focus {
+  outline: none;
+}
+
+.button {
+  padding: 8px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button_blue {
+  background-color: #4469ae;
+}
+
+.button_blue:hover {
+  background-color: #133e97;
+}
+
+.button_red {
+  background-color: #b04546;
+}
+
+.button_red:hover {
+  background-color: #b41719;
+}
+
+.post {
+  position: relative;
+}
+
+.posts-item {
+  cursor: pointer;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post__header-img {
+  width: 40px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.post__content {
+  font-size: 20px;
+}
+
+textarea.post__content {
+  width: 100%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  resize: none;
+}
+
+.post__time, .post__close {
+  position: absolute;
+  top: 0;
+}
+
+.post__time {
+  right: 25px;
+  font-size: 10px;
+}
+
+.post__close {
+  right: 5px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.post__close:hover {
+  color: red;
+}
+
+.post__button-wrapper {
+  text-align: right;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: right;
+  column-gap: 8px;
 }
