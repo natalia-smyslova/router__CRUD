@@ -24,7 +24,6 @@
 }
 
 .header__input {
-  flex: 1;
   border: none;
 }
 
@@ -37,7 +36,6 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  transition: .3s;
   cursor: pointer;
 }
 
@@ -45,16 +43,8 @@
   background-color: #4469ae;
 }
 
-.button_blue:hover {
-  background-color: #133e97;
-}
-
 .button_red {
   background-color: #b04546;
-}
-
-.button_red:hover {
-  background-color: #b41719;
 }
 
 .post {

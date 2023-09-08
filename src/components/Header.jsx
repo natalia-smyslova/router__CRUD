@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { PostContext } from "../PostContext";
+import { PostContext } from "../Context/PostContext";
 import Button from "./Button";
 
 function Header() {

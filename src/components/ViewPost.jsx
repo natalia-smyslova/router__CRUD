@@ -30,7 +30,7 @@ function ViewPost() {
   
     const savePost = () => {
       const data = { content: post.content };
-      fetch(process.env.REACT_APP_URL + `/posts/${post.id}`, { method: 'PUT', body: JSON.stringify(data) })
+      fetch(import.meta.env.VITE_URL + `posts/${post.id}`, { method: 'PUT', body: JSON.stringify(data) })
         .then(() => navigate('/'));
     };
   

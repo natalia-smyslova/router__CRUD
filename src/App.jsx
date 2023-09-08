@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Page404 from './components/Page404';
 import Main from './components/Main';
-import { PostContext } from './PostContext';
+import { PostContext } from './Context/PostContext';
 import NewPost from './components/NewPost';
 import ViewPost from './components/ViewPost';
 

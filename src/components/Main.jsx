@@ -6,8 +6,7 @@ function Main(){
     const [list, setList] = useState([]);
 
     useEffect(() => {
-      console.log(import.meta.env.VITE_URL);
-      fetch(import.meta.env.VITE_URL + '/posts')
+      fetch(import.meta.env.VITE_URL + 'posts')
       .then(res => res.json())
       .then(json => setList(json));
     }, []);

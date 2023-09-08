@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import moment from "moment/moment";
 import PostHeader from "./PostHeader";
+import PropTypes from 'prop-types';
 
 function Post({ post }) {
   const navigate = useNavigate();
@@ -12,6 +13,13 @@ function Post({ post }) {
       <span className="post__time">{moment(post.created).fromNow()}</span>
     </div>
   );
+}
+
+Post.propTypes = {
+  post: PropTypes.object,
+  id: PropTypes.string,
+  content: PropTypes.string,
+  created: PropTypes.string,
 }
 
 export default Post
